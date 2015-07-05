@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Create Question</title>
+</head>
+<body> 
+	<div class="wrapp">		
+	<div class="your_vote">Create Question</div>
+	<form id="frmCreateQuestion" method = "POST">
+	<div class="txtarea">
+		<textarea name="txtarea" rows="20" cols="100"> </textarea>
+		<button class="btnNewQuestion" id="btnNewQuestion" type="button" onclick="javascript:Reset()">New</button>		
+		<button class="btnSubmitQuestion" id="btnSubmitQuestion" onclick="javascript:AlertUrlQuestion()" type="button">Submit</button>		
+		</div>
+	</div>
+	</form>	
+	</div>	
+</body>
+<script type="text/javascript">
+	function AlertUrlQuestion()
+    {
+		alert('Question URL: http://localhost/dalaho/index.php');
+		window.location.replace("http://camto.tk/dalaho/index.php");
+    }
+	
+	// Form Reset
+	function Reset()
+	{
+		document.getElementById("frmCreateQuestion").reset();
+	}
+</script>
+</html>
+
+
+
